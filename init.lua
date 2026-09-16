@@ -27,6 +27,7 @@ local sky_notes = {
 local function get_sky_formspec()
     local fs = "formspec_version[4]" .. -- Enforce precise scaling coords across all screens
                "size[11.0, 7.5]" ..
+	       "no_prepend[]" ..
                "bgcolor[#0d1117cc;true]" .. -- Translucent dark slate background
                
                -- Strip native blocky UI borders to create a clean minimalist touch-pad look
